@@ -1,0 +1,27 @@
+{
+  "name": "Webpack-Workshop-WWC",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/zalora/Webpack-Workshop-WWC.git",
+  "author": "Yichang <yichang.li@zalora.com>",
+  "license": "",
+  "scripts": {
+    "build": "./node_modules/webpack/bin/webpack.js",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
