@@ -18,15 +18,18 @@ module.exports = {
 	module: {
 		rules: [
 			{
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader'
-                }
-            },
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader',
+					options: {
+						presets: ['@babel/preset-env']
+					}
+				}
+			},
 			//Inform about CSS loaders so that it can be bundled too
-			{ 
-				test: /\.sass$/, 
+			{
+				test: /\.sass$/,
 				use: [
 					'style-loader', // creates style nodes from JS strings
 					'css-loader', // translates CSS into CommonJS
@@ -35,5 +38,5 @@ module.exports = {
 			}
 		]
 	}
-	
+
 };

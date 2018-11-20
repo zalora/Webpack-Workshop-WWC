@@ -6,23 +6,26 @@ const Webpack = require('webpack');
 // Our configuration
 module.exports = {
 
-	// Define the entry point
-	entry: path.resolve(__dirname, 'js/index.js'),
+    // Define the entry point
+    entry: path.resolve(__dirname, 'js/index.js'),
 
-	// Output configuration
-	output: {
-		path: path.resolve(__dirname, 'dist/'),
+    // Output configuration
+    output: {
+        path: path.resolve(__dirname, 'dist/'),
         filename: 'bundle.js',
         publicPath: '/examples/05-dev-server/dist/',
     },
     devtool: 'inline-source-map',
-	module: {
+    module: {
         rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader'
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
                 }
             }
         ]

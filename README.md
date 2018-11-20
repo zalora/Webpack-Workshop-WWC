@@ -15,3 +15,9 @@ held at the ZALORA office on October 3rd, 2018.
 ## Usage
 
     npm run build
+
+## Examples
+
+`examples` folder contains only the source code regarding each examples demostracted during the workshop.
+
+Add `--config ./examples/{folder_name}/webpack.config.js` to your npm script to run the corresponding examples.
