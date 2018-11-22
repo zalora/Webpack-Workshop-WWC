@@ -15,7 +15,7 @@ module.exports = {
     ...
     module: {
         rules: [{
-            test: /\.scss$/,
+            test: /\.sass$/,
             use: [
                 "style-loader", // creates style nodes from JS strings
                 "css-loader", // translates CSS into CommonJS
